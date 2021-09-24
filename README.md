@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.com/JamesFrech/linearalgebra.svg?branch=main)](https://travis-ci.com/JamesFrech/linearalgebra)
 <!-- badges: end -->
 
 The goal of linearalgebra is to provide various functions to perform
@@ -16,7 +18,7 @@ return the rref of a matrix, find the determinant of a matrix, and more.
 You can install the released version of linearalgebra from github with:
 
 ``` r
-install_.packages_github("JamesFrech/linearalgebra")
+install_github("JamesFrech/linearalgebra")
 ```
 
 ## Usage
