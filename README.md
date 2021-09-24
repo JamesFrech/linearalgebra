@@ -23,7 +23,7 @@ install_github("JamesFrech/linearalgebra")
 
 ## Usage
 
-Here are some examples for the functions included in this package:
+Here are some examples of the functions included in this package:
 
 The first function returns the transpose of a matrix.
 

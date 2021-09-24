@@ -32,10 +32,10 @@ install_github("JamesFrech/linearalgebra")
 
 ## Usage
 
-Here are some examples for the functions included in this package:
+Here are some examples of the functions included in this package:
 
 The first function returns the transpose of a matrix.
-```{r transpose example}
+```{r transpose_example}
 transpose <- function(matrix){
   t_matrix <- matrix(nrow = ncol(matrix), ncol = nrow(matrix))
   # make the rows of the matrix the columns of the transpose
@@ -49,7 +49,7 @@ transpose(matrix(1:6, nrow = 2))
 ```
 
 This function multiplies matrices together.
-```{r multiply_matrices example}
+```{r multiply_matrices_example}
 m1 <- matrix(1:6, ncol = 2)
 m2 <-  matrix(8:13, nrow = 2)
 print(m1)
@@ -75,7 +75,7 @@ multiply_matrices(m1, m2)
 Functions row_swap, row_replace, and arrange_rows are usable as well. However they are just meant to be used when
 called in rref. Refer to their documentation for examples on these functions.
 
-```{r rref example}
+```{r rref_example}
 row_swap <- function(matrix, row1, row2){
   # copy the first desired row as a temporary row to the end of the matrix
   matrix <- rbind(matrix, matrix[row1,])
@@ -191,7 +191,7 @@ rref(rbind(c(-3, 6, -1, 1, -7), c(1, -2, 2, 3, -1), c(2, -4, 5, 8, -4)))
 ```
 
 This function creates the identity matrix of desired size.
-```{r i_matrix example}
+```{r i_matrix_example}
 i_matrix <- function(size){
   matrix <- matrix(0, nrow= size, ncol = size)
   # make diagonals 1
@@ -205,7 +205,7 @@ i_matrix(5)
 ```
 
 This function computes the determinant of a matrix.
-```{r det example}
+```{r det_example}
 det <- function(matrix){
   if(ncol(matrix) != nrow(matrix)){
     stop("Must be an n by n matrix")

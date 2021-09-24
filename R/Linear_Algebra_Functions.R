@@ -157,8 +157,6 @@ arrange_rows <- function(matrix){
 #'
 #' @export
 rref <- function(matrix){
-  # just need the first row to not be 0, don't rearrange them all.........
-
   # arrange rows so that 0's are at bottom
   new_matrix <- arrange_rows(matrix)
   column <- 1
